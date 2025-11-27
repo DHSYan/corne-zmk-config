@@ -75,24 +75,24 @@
 
         layer_2 {
             bindings = <
-&trans            &trans  &trans  &trans          &kp C_PLAY_PAUSE  &trans       &trans          &trans          &trans  &trans        &kp RIGHT_ARROW  &trans
-&kp LEFT_ALT      &none   &none   &none           &none             &none        &trans          &kp LEFT_ARROW  &trans  &kp C_NEXT    &trans           &trans
-&kp LEFT_CONTROL  &trans  &trans  &kp DOWN_ARROW  &kp UP_ARROW      &trans       &kp C_PREVIOUS  &kp K_MUTE      &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp DEL
-                                  &trans          &trans            &kp LCTRL    &trans          &trans          &trans
+&none             &none  &none  &none           &kp C_PLAY_PAUSE  &none        &none           &none           &none  &none         &kp RIGHT_ARROW  &none
+&kp LEFT_ALT      &none  &none  &none           &none             &none        &none           &kp LEFT_ARROW  &none  &kp C_NEXT    &none            &none
+&kp LEFT_CONTROL  &none  &none  &kp DOWN_ARROW  &kp UP_ARROW      &none        &kp C_PREVIOUS  &kp K_MUTE      &none  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp DEL
+                                &mo 3           &none             &kp LCTRL    &none           &none           &none
             >;
 
-            label = "media&arrow";
+            label = "m&a";
         };
 
         layer_3 {
             bindings = <
-&kp F1                                &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&bt BT_CLR                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none   &none   &trans   &trans   &trans
-&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &trans        &trans        &none         &none         &none           &none   &none   &none   &none    &none    &trans
-                                                                  &none         &none         &none           &none   &none   &none
+&trans  &trans  &trans  &trans         &trans       &trans    &trans  &trans    &trans  &trans  &kp END  &trans
+&trans  &trans  &trans  &trans         &trans       &trans    &trans  &kp HOME  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans    &trans  &trans    &trans  &trans  &trans   &trans
+                        &trans         &trans       &mo 5     &trans  &trans    &trans
             >;
 
-            label = "fn&bt";
+            label = "fn-k";
         };
 
         layer_4 {
@@ -104,6 +104,17 @@
             >;
 
             label = "numpad";
+        };
+
+        layer_5 {
+            bindings = <
+&kp F1                                &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&bt BT_CLR                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none   &none   &trans   &trans   &trans
+&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &trans        &trans        &none         &none         &none           &none   &none   &none   &none    &none    &trans
+                                                                  &none         &none         &none           &none   &none   &none
+            >;
+
+            label = "fn&bt";
         };
     };
 };
